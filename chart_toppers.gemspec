@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'chart/toppers/cli/gem/version'
+require 'chart_toppers/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "chart-toppers-cli-gem"
-  spec.version       = Chart::Toppers::Cli::Gem::VERSION
+  spec.name          = "chart_toppers"
+  spec.version       = ChartToppers::VERSION
   spec.authors       = ["ghostofvermeer"]
   spec.email         = ["phil.grossman11@gmail.com"]
 
