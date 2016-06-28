@@ -1,5 +1,2 @@
-require "chart_toppers/version"
-
-module ChartToppers
-  # Your code goes here...
-end
+require_relative "./chart_toppers/version"
+require_relative './chart_toppers/cli'
