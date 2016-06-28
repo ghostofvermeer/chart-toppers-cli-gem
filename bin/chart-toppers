@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require '../lib/chart_toppers'
+
+ChartToppers::CLI.new.call
+
