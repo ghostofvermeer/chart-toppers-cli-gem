@@ -1,4 +1,5 @@
 require 'date'
+require '../../bin/chart-toppers'
 
 class ChartToppers::CLI
 
@@ -78,8 +79,11 @@ end
 
   def billboard
   	puts "Billboard Hot 100 on #{self.time.strftime "%d/%m/%Y"}"
-    puts "1."
-    puts "2."
+    Scraper.scrape_billboard
+    Chart.new(Scraper.billboard)
+    Chart.billboard.each do |song|
+      puts '#{Song.rank}. "#{Song.name}" - #{Song.artist}'
+    end
   end
 
   def indie_shuffle
